@@ -17,7 +17,7 @@ quick-sharun \
 	/usr/lib/libnss_nis.so* \
 	/usr/lib/libnsl.so*     \
 	/usr/lib/libnss_mdns*_minimal.so*
-
+echo 'OPENCODE_DISABLE_AUTOUPDATE=1' >> ./AppDir/.env
 pacman -S --noconfirm adwaita-fonts
 
 # Add AdwaitaSans font that OpenCode requests, as fallback can fail and show no text
