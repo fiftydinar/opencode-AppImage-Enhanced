@@ -12,11 +12,7 @@ export DEPLOY_OPENGL=1
 export STARTUPWMCLASS=ai.opencode.desktop
 
 # Deploy dependencies
-quick-sharun \
-	./AppDir/bin/*          \
-	/usr/lib/libnss_nis.so* \
-	/usr/lib/libnsl.so*     \
-	/usr/lib/libnss_mdns*_minimal.so*
+quick-sharun ./AppDir/bin/*
 echo 'OPENCODE_DISABLE_AUTOUPDATE=1' >> ./AppDir/.env
 pacman -S --noconfirm adwaita-fonts
 
